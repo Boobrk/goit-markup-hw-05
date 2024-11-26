@@ -539,7 +539,7 @@ img {
   margin-left: 84px;
 }
 
-.subscribe-h3{
+.subscribe-header{
   margin-bottom: 16px;
   font-weight: 500;
   font-size: 16px;
@@ -603,7 +603,9 @@ img {
 
 
 
-/* #region Modal */
+
+
+
 .backdrop-overlay {
   background-color: rgba(46, 47, 66, 0.4);
   position: fixed;
@@ -678,7 +680,11 @@ img {
   fill: #fff;
 }
 
-/* Modal form */
+
+
+
+
+
 .modal-caption {
   font-weight: 500;
   font-size: 16px;
@@ -758,9 +764,10 @@ img {
 .form-input:focus + svg {
   fill: #4d5ae5;
 }
-/* #endregion */
 
-/* #region Checkbox and button */
+
+
+
 .modal-form-checkbox {
   margin-bottom: 24px;
 }
@@ -795,9 +802,11 @@ img {
 
 .checkbox-input:checked + .modal-form-checkbox-label-text > .form-checkbox {
   background-color: #404bbf;
-  fill: #f4f4fd;
+  fill: #F4F4FD;
   border: none;
 }
+
+
 .checkbox-link {
   line-height: 1.33;
   text-decoration: underline;
