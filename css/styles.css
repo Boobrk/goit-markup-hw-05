@@ -778,12 +778,7 @@ img {
   margin-bottom: 24px;
 }
 
-.modal-agreement-text {
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.04em;
-  color: #8e8f99;
-}
+
 
 .form-checkbox {
   width: 16px;
@@ -806,17 +801,53 @@ img {
   fill: #f4f4fd;
 }
 
-input[type="checkbox"]:checked + .modal-agreement-text > .custom-checkbox {
-  background-color: #404bbf;
+/* Стили для отмеченного состояния */
+input[type="checkbox"]:checked + .form-checkbox {
+  background-color: var(--checkbox-bg-color, #404bbf); /* Используем CSS переменную */
   border: none;
-  fill: #F4F4FD;
 }
 
+input[type="checkbox"]:checked + .form-checkbox .form-checkbox-icon {
+  fill: var(--checkbox-icon-color, #F4F4FD); /* Используем CSS переменную */
+}
 
-input[type="checkbox"]:focus-visible + .modal-agreement-text>.custom-checkbox {
+/* Стили для состояния :focus-visible */
+input[type="checkbox"]:focus-visible + .form-checkbox {
   outline: 1px solid #404bbf;
   outline-offset: 2px;
 }
+
+/* Общие стили текста в метке */
+.modal-agreement-text {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+}
+
+/* Дополнительные стили для чекбокса */
+.form-checkbox {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: #fff; /* Начальный цвет */
+  position: relative;
+}
+
+.form-checkbox-icon {
+  display: none; /* Скрываем иконку, пока не отмечено */
+}
+
+input[type="checkbox"]:checked + .form-checkbox .form-checkbox-icon {
+  display: inline-block; /* Показываем иконку, когда отмечено */
+}
+
+
+
+
 
 .checkbox-link {
   line-height: 1.33;
