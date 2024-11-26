@@ -802,10 +802,12 @@ img {
   fill: #f4f4fd;
 }
 
-.checkbox-input:checked + .modal-form-checkbox-label-text > .form-checkbox {
+.checkbox-input:checked + .modal-form-checkbox-label-text .form-checkbox {
   background-color: #404bbf;
-  fill: #F4F4FD;
   border: none;
+}
+.checkbox-input:checked + .modal-form-checkbox-label-text .form-checkbox-icon {
+  fill: #F4F4FD;
 }
 
 
