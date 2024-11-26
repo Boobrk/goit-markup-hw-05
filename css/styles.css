@@ -790,17 +790,12 @@ img {
   fill: #f4f4fd;
 }
 
-input[type="checkbox"]:checked + .modal-agreement-text > .custom-checkbox {
-  background-color: #404bbf;
+input:checked + label > span {
+  fill: #f4f4fd;
   border: none;
-  fill: #F4F4FD;
+  background-color: #404bbf;
 }
 
-
-input[type="checkbox"]:focus-visible + .modal-agreement-text> .custom-checkbox {
-  outline: 1px solid #404bbf;
-  outline-offset: 2px;
-}
 
 .modal-agreement-text {
   font-size: 12px;
