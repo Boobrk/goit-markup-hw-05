@@ -800,7 +800,7 @@ img {
   fill: #f4f4fd;
 }
 
-.checkbox-input:checked + .modal-form-checkbox-label-text > .form-checkbox {
+input[type="checkbox"]:checked + .modal-form-checkbox-label-text > .form-checkbox {
   background-color: #404bbf;
   fill: #F4F4FD;
   border: none;
