@@ -778,10 +778,10 @@ img {
   margin-bottom: 24px;
 }
 
-.modal-form-checkbox-label-text {
+.modal-agreement-text {
   font-size: 12px;
-  letter-spacing: 0.04em;
   line-height: 1.17;
+  letter-spacing: 0.04em;
   color: #8e8f99;
 }
 
@@ -806,13 +806,16 @@ img {
   fill: #f4f4fd;
 }
 
-.checkbox-input:checked + .modal-form-checkbox-label-text .form-checkbox {
-    background-color: var(--checkbox-bg, #404bbf); /* Использование CSS переменной */
-    border: none;
+input[type="checkbox"]:checked + .modal-agreement-text > .custom-checkbox {
+  background-color: #404bbf;
+  border: none;
+  fill: #F4F4FD;
 }
 
-.checkbox-input:checked + .modal-form-checkbox-label-text .form-checkbox-icon {
-    fill: var(--icon-color, #F4F4FD); /* Использование CSS переменной */
+
+input[type="checkbox"]:focus-visible + .modal-agreement-text>.custom-checkbox {
+  outline: 1px solid #404bbf;
+  outline-offset: 2px;
 }
 
 .checkbox-link {
