@@ -571,10 +571,6 @@ img {
   color: #ffffff;
 }
 
-
-
-
-
 .footer-button {
   display: flex;
   justify-content: center;
@@ -774,8 +770,6 @@ img {
 
 
 
-
-
 .modal-form-checkbox {
   margin-bottom: 24px;
 }
@@ -808,12 +802,10 @@ img {
   fill: #f4f4fd;
 }
 
-.checkbox-input:checked + .modal-form-checkbox-text .form-checkbox {
+.checkbox-input:checked + .modal-form-checkbox-label-text > .form-checkbox {
   background-color: #404bbf;
-  border: none;
-}
-.checkbox-input:checked + .modal-form-checkbox-text .form-checkbox-icon {
   fill: #F4F4FD;
+  border: none;
 }
 
 
