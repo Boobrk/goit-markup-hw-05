@@ -601,6 +601,10 @@ img {
 
   .icons-button-image{
     margin-left: 16px;
+    fill: #fff;
+    width: 24px;
+    height: 24px;
+    align-items: center;
   }
 
 
@@ -803,13 +807,13 @@ img {
 }
 
 .checkbox-input:checked + .modal-form-checkbox-label-text .form-checkbox {
-  background-color: #404bbf;
-  border: none;
-}
-.checkbox-input:checked + .modal-form-checkbox-label-text .form-checkbox-icon {
-  fill: #F4F4FD;
+    background-color: var(--checkbox-bg, #404bbf); /* Использование CSS переменной */
+    border: none;
 }
 
+.checkbox-input:checked + .modal-form-checkbox-label-text .form-checkbox-icon {
+    fill: var(--icon-color, #F4F4FD); /* Использование CSS переменной */
+}
 
 .checkbox-link {
   line-height: 1.33;
