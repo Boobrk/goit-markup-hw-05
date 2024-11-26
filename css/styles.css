@@ -601,6 +601,10 @@ img {
 
   .icons-button-image{
     margin-left: 16px;
+    fill: #fff;
+    width: 24px;
+    height: 24px;
+    align-items: center;
   }
 
 
